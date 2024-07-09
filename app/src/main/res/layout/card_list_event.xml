@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="403dp"
+        android:layout_height="50dp"
+        android:background="@drawable/wallpaper"
+        app:layout_constraintBottom_toTopOf="@+id/tvIdEvent"
+        app:layout_constraintTop_toTopOf="@+id/tvIdEvent">
+
+        <TextView
+            android:id="@+id/tvIdEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif"
+            android:text="Event ID"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvEventName"
+            app:layout_constraintStart_toEndOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif"
+            android:text="Name"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTicketsAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif"
+            android:text="tickets"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+            app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/tvActiveEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif"
+            android:text="Active"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCategoryIDEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Category ID"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EventID"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvEventName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category ID"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvCategoryIDEvent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvEventName"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tickets"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvTicketsAvailable"
+            app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="202dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
