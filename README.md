@@ -9,4 +9,4 @@
 
 ## After adding the events, you can see the location of the event in google maps, and also can tap the fragment to search for the event in the internet  
 
-### The datas in the application are stored inside android's sqlite database  
+### Datas are saved using Room Persistence Library SQLite, Rooms, and LiveData 
